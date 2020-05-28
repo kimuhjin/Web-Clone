@@ -27,6 +27,23 @@ to {
     opacity:1;   
 }
 `;
+const ColorChange = keyframes`
+from{
+    background-color:transparent;
+}
+to {
+    background-color:#3a62ad;
+    color:white;
+}
+`;
+const Color = keyframes`
+from{
+    background-color:#3a62ad
+}
+to {
+    background-color: transparent;
+}
+`;
 const MarginContainer = styled.div`
   max-width: 1200px;
   margin-right: auto;
@@ -55,6 +72,13 @@ const DetailButton = styled.a`
   border-radius: 4px;
   font-weight: bold;
   animation: ${FadeIn} 1s backwards 2.5s;
+  cursor: pointer;
+  &:hover {
+    transition: 0.5s;
+    background-color: #3a62ad;
+    color: white;
+    text-decoration: underline;
+  }
 `;
 const Slogan = styled.div`
   position: absolute;

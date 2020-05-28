@@ -62,6 +62,13 @@ const DetailButton = styled.a`
   align-items: center;
   border-radius: 4px;
   font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+  }
 `;
 const Container = styled.div`
   display: flex;

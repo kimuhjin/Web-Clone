@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { GrSearch } from "react-icons/gr";
+
 function Header() {
   return (
     <Container>
@@ -13,7 +15,9 @@ function Header() {
           <Nav href="http://localhost:3000">Customer Service & Ideas</Nav>
           <Bar>|</Bar>
           <Nav href="http://localhost:3000">Find a Store</Nav>
-          <Search />
+          <Search>
+            <GrSearch size={24} />
+          </Search>
         </NavContainer>
         <MenuContainer>
           <Menu href="http://localhost:3000">COFFEE</Menu>
@@ -89,6 +93,9 @@ const Nav = styled.a`
 `;
 
 const Search = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 34px;
   height: 34px;
   border: 1px solid lightgray;
