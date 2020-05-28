@@ -43,8 +43,6 @@ const Container = styled.div`
   width: 100%;
   height: 120px;
   display: flex;
-  position: fixed;
-  z-index: 2;
   background-color: white;
 `;
 const Logo = styled.div`
