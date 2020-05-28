@@ -3,43 +3,33 @@ import styled from "styled-components";
 function Header() {
   return (
     <Container>
-      <MarginContainer>
-        <Logo />
-        <UtilContainer>
-          <NavContainer>
-            <Nav href="http://localhost:3000">Sign In</Nav>
-            <Bar>|</Bar>
-            <Nav href="http://localhost:3000">My starbucks</Nav>
-            <Bar>|</Bar>
-            <Nav href="http://localhost:3000">Customer Service & Ideas</Nav>
-            <Bar>|</Bar>
-            <Nav href="http://localhost:3000">Find a Store</Nav>
-            <Search />
-          </NavContainer>
-          <MenuContainer>
-            <Menu href="http://localhost:3000">COFFEE</Menu>
-            <Menu href="http://localhost:3000">MENU</Menu>
-            <Menu href="http://localhost:3000">STORE</Menu>
-            <Menu href="http://localhost:3000">RESPONSIBILITY</Menu>
-            <Menu href="http://localhost:3000">MY STARBUCKS REWARDS</Menu>
-            <Menu href="http://localhost:3000">WHAT'S NEW</Menu>
-          </MenuContainer>
-        </UtilContainer>
-      </MarginContainer>
+      <Logo />
+      <UtilContainer>
+        <NavContainer>
+          <Nav href="http://localhost:3000">Sign In</Nav>
+          <Bar>|</Bar>
+          <Nav href="http://localhost:3000">My starbucks</Nav>
+          <Bar>|</Bar>
+          <Nav href="http://localhost:3000">Customer Service & Ideas</Nav>
+          <Bar>|</Bar>
+          <Nav href="http://localhost:3000">Find a Store</Nav>
+          <Search />
+        </NavContainer>
+        <MenuContainer>
+          <Menu href="http://localhost:3000">COFFEE</Menu>
+          <Menu href="http://localhost:3000">MENU</Menu>
+          <Menu href="http://localhost:3000">STORE</Menu>
+          <Menu href="http://localhost:3000">RESPONSIBILITY</Menu>
+          <Menu href="http://localhost:3000">MY STARBUCKS REWARDS</Menu>
+          <Menu href="http://localhost:3000">WHAT'S NEW</Menu>
+        </MenuContainer>
+      </UtilContainer>
     </Container>
   );
 }
 
 export default Header;
 
-const MarginContainer = styled.div`
-  width: 100%;
-  height: 120px;
-  display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
-  justify-content: flex-end;
-`;
 const Bar = styled.div`
   font-size: 10px;
   color: lightgray;
@@ -51,6 +41,10 @@ const UtilContainer = styled.div`
   flex-direction: column;
 `;
 const Container = styled.div`
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
   display: flex;
 `;
 const Logo = styled.div`
@@ -63,6 +57,8 @@ const Logo = styled.div`
 `;
 
 const MenuContainer = styled.div`
+  width: 100%;
+  height: 66px;
   display: flex;
   justify-content: flex-end;
 `;
@@ -71,7 +67,7 @@ const Menu = styled.a`
   text-align: center;
   height: 66px;
   display: block;
-  margin-top: 10px;
+  padding-top: 10px;
   font-size: 13px;
   color: #333333;
   margin: 0px 17px;
@@ -81,7 +77,6 @@ const NavContainer = styled.div`
   height: 54px;
   display: flex;
   justify-content: flex-end;
-
   align-items: center;
 `;
 

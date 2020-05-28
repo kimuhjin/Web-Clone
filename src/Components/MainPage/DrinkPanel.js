@@ -1,15 +1,18 @@
 import React, { Fragment } from "react";
 import styled, { keyframes } from "styled-components";
+
 function DrinkPanel() {
   return (
     <Fragment>
       <Container>
-        <Slogan></Slogan>
-        <Image1CW></Image1CW>
-        <Image2BW></Image2BW>
-        <Image3P></Image3P>
-        <Image4CB></Image4CB>
-        <DetailButton>자세히 보기</DetailButton>
+        <MarginContainer>
+          <Slogan></Slogan>
+          <Image1CW></Image1CW>
+          <Image2BW></Image2BW>
+          <Image3P></Image3P>
+          <Image4CB></Image4CB>
+          <DetailButton>자세히 보기</DetailButton>
+        </MarginContainer>
       </Container>
     </Fragment>
   );
@@ -24,11 +27,23 @@ to {
     opacity:1;   
 }
 `;
+const MarginContainer = styled.div`
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+`;
+
+const Container = styled.div`
+  height: 646px;
+  background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
 const DetailButton = styled.a`
   display: flex;
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 45%;
+  left: 15%;
   width: 121px;
   height: 34px;
   text-align: center;
@@ -41,20 +56,11 @@ const DetailButton = styled.a`
   font-weight: bold;
   animation: ${FadeIn} 1s backwards 2.5s;
 `;
-
-const Container = styled.div`
-  width: auto;
-  height: 646px;
-  background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-`;
-
 const Slogan = styled.div`
   position: absolute;
-  top: 25%;
-  left: 10%;
-  width: 340px;
+  top: 23%;
+  left: 15%;
+  width: 373px;
   height: 230px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_emblem.png");
   background-size: 100%;
@@ -64,7 +70,7 @@ const Slogan = styled.div`
 
 const Image1CW = styled.div`
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 66%;
   width: 300px;
   height: 348px;
@@ -76,8 +82,8 @@ const Image1CW = styled.div`
 
 const Image2BW = styled.div`
   position: absolute;
-  top: 32%;
-  left: 22%;
+  top: 30%;
+  left: 28%;
   width: 487px;
   height: 330px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev2_cup.png");
@@ -89,8 +95,8 @@ const Image2BW = styled.div`
 
 const Image3P = styled.div`
   position: absolute;
-  top: 23%;
-  left: 47%;
+  top: 21%;
+  left: 50%;
   width: 326px;
   height: 275px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev3_cup.png");
@@ -102,8 +108,8 @@ const Image3P = styled.div`
 
 const Image4CB = styled.div`
   position: absolute;
-  top: 52%;
-  left: 43%;
+  top: 44%;
+  left: 46%;
   width: 486px;
   height: 323px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev4_cup_new_1.png");

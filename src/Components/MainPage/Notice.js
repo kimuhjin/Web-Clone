@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
+import { BsPlus } from "react-icons/bs";
+import { BsChevronDown } from "react-icons/bs";
 
 function Notice() {
   const [Arrays, setArray] = useState([]);
@@ -18,10 +20,16 @@ function Notice() {
         <Notices>
           <NTitle>공지사항</NTitle>
           <NoticeBar> SSG PAY 시스템 점검</NoticeBar>
-          <NMore>+</NMore>
+          <NMore href="http://localhost:3000">
+            <BsPlus size={28} />
+          </NMore>
         </Notices>
         <Promotion>
           <PTitle>스타벅스 프로모션</PTitle>
+
+          <PMore href="http://localhost:3000">
+            <BsChevronDown size={28} />
+          </PMore>
         </Promotion>
       </Container>
     </div>
@@ -38,18 +46,33 @@ to{
     margin-top:0px;
 }
 `;
-const NMore = styled.div`
+const NMore = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
   border: 1px solid white;
   border-radius: 50%;
   box-sizing: border-box;
   color: white;
+  margin: 0 20px;
+`;
+const PMore = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0 20px;
 `;
 const NoticeBar = styled.div`
   display: flex;
   font-size: 14px;
-  width: 60%;
+  width:470px;
   padding: 0px 15px;
   color: white;
   align-items: center;
@@ -57,6 +80,10 @@ const NoticeBar = styled.div`
 `;
 
 const PTitle = styled.div`
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
 
   font-weight: bold;
@@ -66,6 +93,7 @@ const NTitle = styled.div`
   font-size: 16px;
   color: white;
   font-weight: bold;
+  margin-left: auto;
 `;
 const Container = styled.div`
   height: 62px;
@@ -75,13 +103,14 @@ const Container = styled.div`
 `;
 const Promotion = styled.div`
   display: flex;
-  width: 40%;
+  width: 45%;
   justify-content: center;
   align-items: center;
 `;
 const Notices = styled.div`
   display: flex;
-  width: 60%;
+  width: 55%;
+
   background-color: black;
   justify-content: center;
   align-items: center;

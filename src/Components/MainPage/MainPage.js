@@ -5,15 +5,17 @@ import Notice from "./Notice";
 import Reward from "./Reward";
 import Bean from "./Bean";
 import styled from "styled-components";
+import Reserve from "./Reserve";
 function MainPage() {
   return (
     <Fragment>
-      <FloatingBanner />
+      <FloatingBanner href="http://localhost:3000" />
       <Header />
       <DrinkPanel />
       <Notice />
       <Reward />
       <Bean />
+      <Reserve />
     </Fragment>
   );
 }
@@ -21,7 +23,7 @@ function MainPage() {
 export default MainPage;
 const FloatingBanner = styled.a`
   position: fixed;
-  right: 1%;
+  right: 5%;
   top: 138px;
   width: 140px;
   height: 240px;
