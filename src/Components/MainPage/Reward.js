@@ -19,6 +19,7 @@ function Reward() {
 }
 
 export default Reward;
+
 const BackgroundContainer = styled.div`
   width: 100%;
   height: 260px;

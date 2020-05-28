@@ -27,23 +27,7 @@ to {
     opacity:1;   
 }
 `;
-const ColorChange = keyframes`
-from{
-    background-color:transparent;
-}
-to {
-    background-color:#3a62ad;
-    color:white;
-}
-`;
-const Color = keyframes`
-from{
-    background-color:#3a62ad
-}
-to {
-    background-color: transparent;
-}
-`;
+
 const MarginContainer = styled.div`
   max-width: 1200px;
   margin-right: auto;
@@ -51,7 +35,7 @@ const MarginContainer = styled.div`
 `;
 
 const Container = styled.div`
-  height: 646px;
+  height: 750px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;

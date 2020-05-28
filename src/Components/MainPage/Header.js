@@ -5,34 +5,47 @@ import { GrSearch } from "react-icons/gr";
 function Header() {
   return (
     <Container>
-      <Logo />
       <UtilContainer>
-        <NavContainer>
-          <Nav href="http://localhost:3000">Sign In</Nav>
-          <Bar>|</Bar>
-          <Nav href="http://localhost:3000">My starbucks</Nav>
-          <Bar>|</Bar>
-          <Nav href="http://localhost:3000">Customer Service & Ideas</Nav>
-          <Bar>|</Bar>
-          <Nav href="http://localhost:3000">Find a Store</Nav>
-          <Search>
-            <GrSearch size={24} />
-          </Search>
-        </NavContainer>
-        <MenuContainer>
-          <Menu href="http://localhost:3000">COFFEE</Menu>
-          <Menu href="http://localhost:3000">MENU</Menu>
-          <Menu href="http://localhost:3000">STORE</Menu>
-          <Menu href="http://localhost:3000">RESPONSIBILITY</Menu>
-          <Menu href="http://localhost:3000">MY STARBUCKS REWARDS</Menu>
-          <Menu href="http://localhost:3000">WHAT'S NEW</Menu>
-        </MenuContainer>
+        <LogoFlexBox>
+          <Logo />
+        </LogoFlexBox>
+        <FlexBox>
+          <NavContainer>
+            <Nav href="http://localhost:3000">Sign In</Nav>
+            <Bar>|</Bar>
+            <Nav href="http://localhost:3000">My starbucks</Nav>
+            <Bar>|</Bar>
+            <Nav href="http://localhost:3000">Customer Service & Ideas</Nav>
+            <Bar>|</Bar>
+            <Nav href="http://localhost:3000">Find a Store</Nav>
+            <Search>
+              <GrSearch size={24} />
+            </Search>
+          </NavContainer>
+          <MenuContainer>
+            <Menu href="http://localhost:3000">COFFEE</Menu>
+            <Menu href="http://localhost:3000">MENU</Menu>
+            <Menu href="http://localhost:3000">STORE</Menu>
+            <Menu href="http://localhost:3000">RESPONSIBILITY</Menu>
+            <Menu href="http://localhost:3000">MY STARBUCKS REWARDS</Menu>
+            <Menu href="http://localhost:3000">WHAT'S NEW</Menu>
+          </MenuContainer>
+        </FlexBox>
       </UtilContainer>
     </Container>
   );
 }
 
 export default Header;
+const LogoFlexBox = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+const FlexBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+`;
 
 const Bar = styled.div`
   font-size: 10px;
@@ -40,24 +53,28 @@ const Bar = styled.div`
 `;
 
 const UtilContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`;
-const Container = styled.div`
-  max-width: 1100px;
+  width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  height: 120px;
   display: flex;
 `;
+const Container = styled.div`
+  width: 100%;
+  height: 120px;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+`;
 const Logo = styled.div`
+  display: inline-flex;
   padding: 17px 17px;
   width: 75px;
   height: 75px;
   background-image: url("https://www.starbucks.co.kr/common/img/common/logo.png");
   background-position: center;
   background-repeat: no-repeat;
+  justify-content: flex-start;
 `;
 
 const MenuContainer = styled.div`

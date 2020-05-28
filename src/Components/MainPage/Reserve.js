@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 function Reserve() {
   return (
@@ -16,6 +16,15 @@ function Reserve() {
 }
 
 export default Reserve;
+const FadeIn = keyframes`
+from{
+    opacity:0;
+}
+to {
+    opacity:1;   
+}
+`;
+
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,6 +62,7 @@ const Image = styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  animation: ${FadeIn} 2s backwards;
 `;
 const DetailButton = styled.a`
   display: flex;
