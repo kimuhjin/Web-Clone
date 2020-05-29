@@ -23,7 +23,7 @@ function MainPage() {
 export default MainPage;
 const FloatingBanner = styled.a`
   position: fixed;
-  right: 5%;
+  right: 1%;
   top: 138px;
   width: 140px;
   height: 240px;
