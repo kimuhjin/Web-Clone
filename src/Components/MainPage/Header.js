@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { GrSearch } from "react-icons/gr";
 
 function Header() {
+  const [CMenu, setCMenu] = useState("off");
+  const LeaveMouseC = () => {
+    setCMenu("off");
+    console.log("마우스 오프");
+  };
+  const onMouseC = () => {
+    setCMenu("on");
+    console.log("마우스 온");
+  };
   return (
     <Container>
       <UtilContainer>
@@ -23,7 +32,13 @@ function Header() {
             </Search>
           </NavContainer>
           <MenuContainer>
-            <Menu href="http://localhost:3000">COFFEE</Menu>
+            <CoffeeMenuButton
+              onMouseEnter={onMouseC}
+              onMouseLeave={LeaveMouseC}
+              CMenu={CMenu}
+            >
+              COFFEE
+            </CoffeeMenuButton>
             <Menu href="http://localhost:3000">MENU</Menu>
             <Menu href="http://localhost:3000">STORE</Menu>
             <Menu href="http://localhost:3000">RESPONSIBILITY</Menu>
@@ -32,11 +47,15 @@ function Header() {
           </MenuContainer>
         </FlexBox>
       </UtilContainer>
+      <CoffeeMenu />
     </Container>
   );
 }
 
 export default Header;
+
+const CoffeeMenu = styled.div``;
+
 const LogoFlexBox = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -83,7 +102,10 @@ const MenuContainer = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
-const Menu = styled.a`
+const Menu = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
   text-decoration: none;
   text-align: center;
   height: 66px;
@@ -93,6 +115,22 @@ const Menu = styled.a`
   color: #333333;
   margin: 0px 17px;
 `;
+
+const CoffeeMenuButton = styled.button`
+  cursor: pointer;
+  background-color: ${(props) =>
+    props.CMenu === "on" ? "#2c2a29" : "transparent"};
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  height: 66px;
+  display: block;
+  padding-top: 10px;
+  font-size: 13px;
+  color: ${(props) => (props.CMenu === "on" ? "#669900" : "black")};
+  margin: 0px 17px;
+`;
+
 const NavContainer = styled.div`
   width: 100%;
   height: 54px;
