@@ -127,8 +127,8 @@ const DetailButton = styled.a`
   cursor: pointer;
   &:hover {
     transition: 0.5s;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     text-decoration: underline;
   }
   animation: ${ButtonOpacity} 2s backwards;
