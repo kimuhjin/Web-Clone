@@ -7,6 +7,8 @@ import Bean from "./Bean";
 import styled from "styled-components";
 import Reserve from "./Reserve";
 import Favorite from "./Favorite";
+import Reserve2 from "./Reserve2";
+import Store from "./Store";
 function MainPage() {
   return (
     <Fragment>
@@ -18,6 +20,8 @@ function MainPage() {
       <Bean />
       <Reserve />
       <Favorite />
+      <Reserve2 />
+      <Store />
     </Fragment>
   );
 }
