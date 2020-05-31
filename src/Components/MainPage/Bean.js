@@ -39,6 +39,16 @@ to {
     opacity:1;
 }
 `;
+const TextMove2 = keyframes`
+from{
+    transform:translateX(2500px);
+    opacity:0;
+}
+to {
+    transform:translateX(500px);
+    opacity:1;
+}
+`;
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -48,6 +58,12 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   animation: ${TextMove} 1s both;
+  @media (max-width: 960px) {
+    animation: ${TextMove2} 1s both;
+  }
+  @media (max-width: 640px) {
+    animation: none;
+  }
 `;
 
 const DetailButton = styled.a`
@@ -78,6 +94,15 @@ const Container = styled.div`
   width: 1200px;
   height: 100%;
   background-color: transparent;
+  @media (max-width: 960px) {
+    max-width: 960px;
+    overflow: hidden;
+  }
+  @media (max-width: 640px) {
+    max-width: 640px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 `;
 
 const BackGroundContainer = styled.div`

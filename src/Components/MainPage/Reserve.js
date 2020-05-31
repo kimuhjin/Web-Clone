@@ -40,6 +40,12 @@ const BackGroundContainer = styled.div`
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 960px) {
+    max-width: 960px;
+  }
+  @media (max-width: 640px) {
+    max-width: 640px;
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -54,6 +60,9 @@ const Text = styled.div`
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_reserve_txt.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  @media (max-width: 960px) {
+    background-size: 80%;
+  }
 `;
 const Image = styled.div`
   width: 600px;

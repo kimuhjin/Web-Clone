@@ -32,6 +32,16 @@ const MarginContainer = styled.div`
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  @media (max-width: 960px) {
+    max-width: 960px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @media (max-width: 640px) {
+    max-width: 640px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 `;
 
 const Container = styled.div`
@@ -43,7 +53,7 @@ const Container = styled.div`
 const DetailButton = styled.a`
   display: flex;
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 15%;
   width: 121px;
   height: 34px;
@@ -63,34 +73,45 @@ const DetailButton = styled.a`
     color: white;
     text-decoration: underline;
   }
+  @media (max-width: 960px) {
+    left: 1%;
+  }
 `;
 const Slogan = styled.div`
   position: absolute;
-  top: 23%;
+  top: 25%;
   left: 15%;
-  width: 373px;
-  height: 230px;
+  width: 353px;
+  height: 210px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_emblem.png");
   background-size: 100%;
   background-repeat: no-repeat;
   animation: ${FadeIn} 1s backwards 2s;
+  @media (max-width: 960px) {
+    top: 25%;
+    left: 1%;
+  }
 `;
 
 const Image1CW = styled.div`
   position: absolute;
-  top: 38%;
-  left: 66%;
+  top: 44%;
+  left: 73%;
   width: 300px;
   height: 348px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev1_cup_new_1.png");
   background-size: 100%;
   background-repeat: no-repeat;
   animation: ${FadeIn} 1s backwards;
+  @media (max-width: 960px) {
+    top: 44%;
+    left: 63%;
+  }
 `;
 
 const Image2BW = styled.div`
   position: absolute;
-  top: 30%;
+  top: 32%;
   left: 28%;
   width: 487px;
   height: 330px;
@@ -99,12 +120,16 @@ const Image2BW = styled.div`
   background-repeat: no-repeat;
   animation: ${FadeIn} 1s backwards 0.5s;
   z-index: 1;
+  @media (max-width: 960px) {
+    top: 53%;
+    left: 1%;
+  }
 `;
 
 const Image3P = styled.div`
   position: absolute;
-  top: 21%;
-  left: 50%;
+  top: 23%;
+  left: 54%;
   width: 326px;
   height: 275px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev3_cup.png");
@@ -112,16 +137,25 @@ const Image3P = styled.div`
   background-repeat: no-repeat;
   animation: ${FadeIn} 1s backwards 1s;
   z-index: 0;
+  @media (max-width: 960px) {
+    top: 23%;
+    left: 35%;
+  }
 `;
 
 const Image4CB = styled.div`
   position: absolute;
-  top: 44%;
-  left: 46%;
+  top: 50%;
+  left: 50%;
   width: 486px;
   height: 323px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev4_cup_new_1.png");
   background-size: 100%;
   background-repeat: no-repeat;
   animation: ${FadeIn} 1s backwards 1.5s;
+  @media (max-width: 960px) {
+    top: 70%;
+    left: 25%;
+    z-index: 5;
+  }
 `;

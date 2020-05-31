@@ -77,6 +77,7 @@ const NoticeBar = styled.div`
   color: white;
   align-items: center;
   /* animation: ${Move} 1s infinite both linear; */
+  
 `;
 
 const PTitle = styled.div`
@@ -94,8 +95,17 @@ const NTitle = styled.div`
   color: white;
   font-weight: bold;
   margin-left: auto;
+  @media (max-width: 960px) {
+    width: 130px;
+  }
 `;
 const Container = styled.div`
+  @media (max-width: 960px) {
+    max-width: 960px;
+  }
+  @media (max-width: 640px) {
+    max-width: 640px;
+  }
   height: 62px;
   width: auto;
   display: flex;

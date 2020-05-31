@@ -49,6 +49,14 @@ const Container = styled.div`
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 960px) {
+    max-width: 960px;
+  }
+  @media (max-width: 640px) {
+    max-width: 640px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 `;
 const LeftPannel = styled.div`
   position: absolute;

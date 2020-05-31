@@ -6,6 +6,7 @@ import Reward from "./Reward";
 import Bean from "./Bean";
 import styled from "styled-components";
 import Reserve from "./Reserve";
+import Favorite from "./Favorite";
 function MainPage() {
   return (
     <Fragment>
@@ -16,6 +17,7 @@ function MainPage() {
       <Reward />
       <Bean />
       <Reserve />
+      <Favorite />
     </Fragment>
   );
 }
