@@ -1,22 +1,24 @@
 import React, { Fragment } from "react";
 import styled, { keyframes } from "styled-components";
 
-function Store() {
+function Store({ scroll }) {
   return (
     <Fragment>
       <BackGroundContainer>
-        <Container>
-          <ImageContainer>
-            <Image2>
-              <Image1 />
-            </Image2>
-          </ImageContainer>
-          <TextContainer>
-            <Text1 />
-            <Text2 />
-            <DetailButton>매장 찾기</DetailButton>
-          </TextContainer>
-        </Container>
+        {scroll > 2700 && (
+          <Container>
+            <ImageContainer>
+              <Image2>
+                <Image1 />
+              </Image2>
+            </ImageContainer>
+            <TextContainer>
+              <Text1 />
+              <Text2 />
+              <DetailButton>매장 찾기</DetailButton>
+            </TextContainer>
+          </Container>
+        )}
       </BackGroundContainer>
     </Fragment>
   );

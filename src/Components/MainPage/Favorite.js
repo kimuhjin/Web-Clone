@@ -1,20 +1,22 @@
 import React, { Fragment } from "react";
 import styled, { keyframes } from "styled-components";
 
-function Favorite() {
+function Favorite({ scroll }) {
   return (
     <Fragment>
       <BackGroundContainer>
         <Container>
-          <TextAlignContainer>
-            <TextContainer>
-              <Text1 />
-              <Text2 />
-              <DetailButtonContainer>
-                <DetailButton>자세히 보기</DetailButton>
-              </DetailButtonContainer>
-            </TextContainer>
-          </TextAlignContainer>
+          {scroll > 1350 && (
+            <TextAlignContainer>
+              <TextContainer>
+                <Text1 />
+                <Text2 />
+                <DetailButtonContainer>
+                  <DetailButton>자세히 보기</DetailButton>
+                </DetailButtonContainer>
+              </TextContainer>
+            </TextAlignContainer>
+          )}
           <ImageContainer>
             <Image />
           </ImageContainer>
@@ -77,6 +79,7 @@ const BackGroundContainer = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg");
   height: 800px;
   position: relative;
+  background-size: cover;
   background-repeat: no-repeat;
   width: auto;
   background-attachment: fixed;

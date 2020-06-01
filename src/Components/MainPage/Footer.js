@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import Footer_awards from "./Footer_awards";
+import Footer_Copyright from "./Footer_Copyright";
 function Footer() {
   return (
     <Fragment>
@@ -40,6 +41,7 @@ function Footer() {
           <FooterLogo />
         </SiteMap>
         <Footer_awards />
+        <Footer_Copyright />
       </BackGroundContainer>
     </Fragment>
   );
@@ -50,7 +52,7 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 3px dashed red;
+  /* border: 3px dashed red; */
   font-weight: bold;
 `;
 const SectionTitle = styled.a`
@@ -60,6 +62,10 @@ const SectionTitle = styled.a`
   font-size: 14px;
   color: white;
   align-items: center;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 const Link = styled.a`
   display: flex;
@@ -68,6 +74,10 @@ const Link = styled.a`
   font-size: 12px;
   color: white;
   align-items: center;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 const BackGroundContainer = styled.div`
   width: 100%;
@@ -82,12 +92,12 @@ const SiteMap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border: 3px dashed red;
+  /* border: 3px dashed red; */
 `;
 const FooterLogo = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/footer/footer_logo.png");
   background-repeat: no-repeat;
   width: 15px;
   height: 150px;
-  border: 3px dashed green;
+  /* border: 3px dashed green; */
 `;

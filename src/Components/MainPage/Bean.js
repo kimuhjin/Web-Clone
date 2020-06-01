@@ -1,18 +1,20 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-function Bean() {
+function Bean({ scroll }) {
   return (
     <div>
       <BackGroundContainer>
-        <Container>
-          <BeanImage />
-          <TextContainer>
-            <BeanText />
-            <ButtonContainer>
-              <DetailButton>자세히 보기</DetailButton>
-            </ButtonContainer>
-          </TextContainer>
-        </Container>
+        {scroll > 380 && (
+          <Container>
+            <BeanImage scroll={scroll} />
+            <TextContainer>
+              <BeanText scroll={scroll} />
+              <ButtonContainer>
+                <DetailButton>자세히 보기</DetailButton>
+              </ButtonContainer>
+            </TextContainer>
+          </Container>
+        )}
       </BackGroundContainer>
     </div>
   );
@@ -120,6 +122,7 @@ const BeanImage = styled.div`
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bean.png");
   background-repeat: no-repeat;
   background-position: right;
+
   animation: ${BeanMove} 1s backwards;
 `;
 const BeanText = styled.div`

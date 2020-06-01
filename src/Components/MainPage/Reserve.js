@@ -1,15 +1,19 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled, { keyframes } from "styled-components";
 
-function Reserve() {
+function Reserve({ scroll }) {
   return (
     <Container>
       <BackGroundContainer>
-        <TextContainer>
-          <Text />
-          <DetailButton>자세히 보기</DetailButton>
-        </TextContainer>
-        <Image />
+        {scroll > 900 && (
+          <Fragment>
+            <TextContainer>
+              <Text />
+              <DetailButton>자세히 보기</DetailButton>
+            </TextContainer>
+            <Image />
+          </Fragment>
+        )}
       </BackGroundContainer>
     </Container>
   );
@@ -63,6 +67,7 @@ const Text = styled.div`
   @media (max-width: 960px) {
     background-size: 80%;
   }
+  animation: ${FadeIn} 2s backwards;
 `;
 const Image = styled.div`
   width: 600px;
@@ -92,4 +97,5 @@ const DetailButton = styled.a`
     color: white;
     text-decoration: underline;
   }
+  animation: ${FadeIn} 2s backwards;
 `;

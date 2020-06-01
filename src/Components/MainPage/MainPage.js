@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Header from "./Header";
 import DrinkPanel from "./DrinkPanel";
 import Notice from "./Notice";
@@ -11,6 +11,11 @@ import Reserve2 from "./Reserve2";
 import Store from "./Store";
 import Footer from "./Footer";
 function MainPage() {
+  const [scroll, setscroll] = useState(0);
+  setInterval(() => {
+    setscroll(window.pageYOffset);
+  }, 200);
+
   return (
     <Fragment>
       <FloatingBanner href="http://localhost:3000" />
@@ -18,11 +23,11 @@ function MainPage() {
       <DrinkPanel />
       <Notice />
       <Reward />
-      <Bean />
-      <Reserve />
-      <Favorite />
+      <Bean scroll={scroll} />
+      <Reserve scroll={scroll} />
+      <Favorite scroll={scroll} />
       <Reserve2 />
-      <Store />
+      <Store scroll={scroll} />
       <Footer />
     </Fragment>
   );

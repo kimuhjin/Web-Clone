@@ -29,7 +29,7 @@ const BackGroundContainer = styled.div`
   background-color: #282828;
   width: 100%;
   height: 80px;
-  border: solid red 3px;
+  /* border: solid red 3px; */
   margin-top: 40px;
 `;
 const Award1 = styled.a`
