@@ -9,6 +9,7 @@ import Reserve from "./Reserve";
 import Favorite from "./Favorite";
 import Reserve2 from "./Reserve2";
 import Store from "./Store";
+import Footer from "./Footer";
 function MainPage() {
   return (
     <Fragment>
@@ -22,6 +23,7 @@ function MainPage() {
       <Favorite />
       <Reserve2 />
       <Store />
+      <Footer />
     </Fragment>
   );
 }

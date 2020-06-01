@@ -60,14 +60,14 @@ const Container = styled.div`
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  border: 3px dashed blue;
+  /* border: 3px dashed blue; */
   display: flex;
   justify-content: space-between;
 `;
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border: 3px dashed black;
+  /* border: 3px dashed black; */
   justify-content: center;
   align-items: center;
 `;
@@ -87,7 +87,7 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 4px dashed red;
+  /* border: 4px dashed red; */
   height: auto;
   animation: ${ImageOpacity} 2s backwards;
 `;
@@ -98,7 +98,7 @@ const Image2 = styled.div`
   background-position: left top;
   background-repeat: no-repeat;
   position: relative;
-  border: 3px dashed yellowgreen;
+  /* border: 3px dashed yellowgreen; */
 `;
 
 const Image1 = styled.div`
@@ -109,24 +109,24 @@ const Image1 = styled.div`
   background-repeat: no-repeat;
   position: relative;
   z-index: 6;
-  border: 3px dashed yellowgreen;
+  /* border: 3px dashed yellowgreen; */
 `;
 const Text1 = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/store_txt01.png");
   width: 400px;
-  height: 60px;
-  background-position: center;
+  height: 80px;
+  background-position: left;
   background-repeat: no-repeat;
-  border: 3px dashed yellowgreen;
+  /* border: 3px dashed yellowgreen; */
   animation: ${TextMove1} 2.5s backwards;
 `;
 const Text2 = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/store_txt02.png");
   width: 400px;
-  height: 60px;
-  background-position: center;
+  height: 80px;
+  background-position: left;
   background-repeat: no-repeat;
-  border: 3px dashed yellowgreen;
+  /* border: 3px dashed yellowgreen; */
   animation: ${TextMove2} 2.5s backwards;
 `;
 
