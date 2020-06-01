@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import Footer_awards from "./Footer_awards";
 function Footer() {
   return (
     <Fragment>
@@ -38,6 +39,7 @@ function Footer() {
           </Section>
           <FooterLogo />
         </SiteMap>
+        <Footer_awards />
       </BackGroundContainer>
     </Fragment>
   );
