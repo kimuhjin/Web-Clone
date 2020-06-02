@@ -37,7 +37,7 @@ const TextContainer = styled.div`
 `;
 const BackGroundContainer = styled.div`
   display: flex;
-
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   max-width: 1330px;

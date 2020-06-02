@@ -52,6 +52,7 @@ const BackGroundContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 
 const Container = styled.div`

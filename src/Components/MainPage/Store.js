@@ -83,6 +83,7 @@ const BackGroundContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 const ImageContainer = styled.div`
   width: auto;

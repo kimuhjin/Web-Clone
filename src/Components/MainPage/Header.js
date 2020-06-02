@@ -3,12 +3,16 @@ import styled from "styled-components";
 import { GrSearch } from "react-icons/gr";
 
 function Header() {
+  const [Click, setClick] = useState("off");
   const [CMenu, setCMenu] = useState("off");
   const [MMenu, setMMenu] = useState("off");
   const [SMenu, setSMenu] = useState("off");
   const [RMenu, setRMenu] = useState("off");
   const [MYMenu, setMYMenu] = useState("off");
   const [WMenu, setWMenu] = useState("off");
+  const onClick = () => {
+    setClick("on");
+  };
   const LeaveMouseC = () => {
     setCMenu("off");
   };
@@ -62,7 +66,7 @@ function Header() {
               <Nav href="http://localhost:3000">Customer Service & Ideas</Nav>
               <Bar>|</Bar>
               <Nav href="http://localhost:3000">Find a Store</Nav>
-              <Search>
+              <Search onClick={onClick} Click={Click} placeholder="통합검색">
                 <GrSearch size={24} />
               </Search>
             </NavContainer>
@@ -354,6 +358,7 @@ const Container = styled.div`
   }
 `;
 const Logo = styled.div`
+  cursor: pointer;
   display: inline-flex;
   padding: 17px 17px;
   width: 75px;
@@ -416,7 +421,7 @@ const Nav = styled.a`
   color: #555555;
 `;
 
-const Search = styled.div`
+const Search = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,4 +431,7 @@ const Search = styled.div`
   box-sizing: border-box;
   border-radius: 5px;
   margin-right: 45px;
+  transition: width 1s;
+
+  cursor: pointer;
 `;

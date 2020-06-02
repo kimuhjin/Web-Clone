@@ -84,6 +84,7 @@ const BackGroundContainer = styled.div`
   width: auto;
   background-attachment: fixed;
   display: flex;
+  overflow: hidden;
 `;
 const Text1 = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/fav_prod_txt01.png");
