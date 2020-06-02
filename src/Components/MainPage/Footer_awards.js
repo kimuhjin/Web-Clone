@@ -31,6 +31,7 @@ const BackGroundContainer = styled.div`
   height: 80px;
   /* border: solid red 3px; */
   margin-top: 40px;
+  overflow: hidden;
 `;
 const Award1 = styled.a`
   background-image: url("https://image.istarbucks.co.kr/common/img/footer/footer_award17_01.jpg");

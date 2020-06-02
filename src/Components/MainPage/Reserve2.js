@@ -53,6 +53,9 @@ const BackGroundContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  @media (max-width: 640px) {
+    height: 450px;
+  }
 `;
 
 const Container = styled.div`

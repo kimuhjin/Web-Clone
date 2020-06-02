@@ -75,7 +75,7 @@ const TextAlignContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px red;
+  /* border: solid 2px red; */
   @media (max-width: 640px) {
     flex-direction: column;
   }
@@ -95,11 +95,10 @@ const ImageContainer = styled.div`
 
 const Container = styled.div`
   display: flex;
-  /* border: 3px dashed green; */
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   @media (max-width: 640px) {
     width: 100%;
     flex-direction: column-reverse;
@@ -157,7 +156,7 @@ const TextContainer = styled.div`
   flex-direction: column;
   height: 500px;
   justify-content: flex-end;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   width: 450px;
   @media (max-width: 640px) {
     flex-direction: row;
@@ -209,7 +208,7 @@ const Image = styled.div`
     width: 400px;
     height: 260px;
     position: static;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background-size: 100%;
     display: flex;
     justify-content: center;

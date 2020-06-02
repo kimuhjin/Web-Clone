@@ -65,6 +65,10 @@ const Container = styled.div`
   /* border: 3px dashed blue; */
   display: flex;
   justify-content: space-between;
+  @media (max-width: 640px) {
+    height: 800px;
+    flex-direction: column;
+  }
 `;
 const TextContainer = styled.div`
   display: flex;
@@ -72,6 +76,7 @@ const TextContainer = styled.div`
   /* border: 3px dashed black; */
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 `;
 
 const BackGroundContainer = styled.div`
@@ -84,6 +89,10 @@ const BackGroundContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  @media (max-width: 640px) {
+    height: 800px;
+    background-size: 100% 800px;
+  }
 `;
 const ImageContainer = styled.div`
   width: auto;
@@ -101,6 +110,12 @@ const Image2 = styled.div`
   background-position: left top;
   background-repeat: no-repeat;
   position: relative;
+  @media (max-width: 640px) {
+    width: 300px;
+    height: 230px;
+    background-size: auto 100%;
+    margin-left: 110px;
+  }
   /* border: 3px dashed yellowgreen; */
 `;
 
@@ -113,6 +128,13 @@ const Image1 = styled.div`
   position: relative;
   z-index: 6;
   /* border: 3px dashed yellowgreen; */
+  @media (max-width: 640px) {
+    background-size: auto 100%;
+    width: 250px;
+    height: 200px;
+    margin-top: 170px;
+    margin-left: 100px;
+  }
 `;
 const Text1 = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/store_txt01.png");
