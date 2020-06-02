@@ -53,7 +53,7 @@ const Container = styled.div`
     max-width: 960px;
   }
   @media (max-width: 640px) {
-    max-width: 640px;
+    width: 100%;
     margin-right: 0;
     margin-left: 0;
   }

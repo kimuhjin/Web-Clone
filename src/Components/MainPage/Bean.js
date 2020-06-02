@@ -153,10 +153,10 @@ const BeanImage = styled.div`
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bean.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 100%;
 
   animation: ${BeanMove} 1s backwards;
   @media (max-width: 640px) {
+    background-size: 100%;
     width: 160px;
     height: 400px;
     animation: none;

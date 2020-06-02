@@ -10,6 +10,7 @@ import Favorite from "./Favorite";
 import Reserve2 from "./Reserve2";
 import Store from "./Store";
 import Footer from "./Footer";
+import ResponsiveFooter from "./ResponsiveFooter";
 function MainPage() {
   const [scroll, setscroll] = useState(0);
   setInterval(() => {
@@ -29,6 +30,7 @@ function MainPage() {
       <Reserve2 />
       <Store scroll={scroll} />
       <Footer />
+      <ResponsiveFooter />
     </Fragment>
   );
 }

@@ -84,6 +84,9 @@ const BackGroundContainer = styled.div`
   height: 555px;
   background-color: #2c2a29;
   padding: 35px 0;
+  @media (max-width: 640px) {
+    display: none;
+  }
 `;
 const SiteMap = styled.div`
   width: 1200px;
