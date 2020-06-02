@@ -42,5 +42,12 @@ const FloatingBanner = styled.a`
   height: 240px;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20200521_After_WEB.png");
   background-size: 100% auto;
+  background-repeat: no-repeat;
   z-index: 999;
+  @media (max-width: 640px) {
+    top: 85px;
+    width: 120px;
+    height: 200px;
+    background-repeat: no-repeat;
+  }
 `;

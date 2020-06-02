@@ -57,6 +57,10 @@ const NMore = styled.a`
   box-sizing: border-box;
   color: white;
   margin: 0 20px;
+  @media (max-width: 640px) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 const PMore = styled.a`
   display: flex;
@@ -77,7 +81,9 @@ const NoticeBar = styled.div`
   color: white;
   align-items: center;
   /* animation: ${Move} 1s infinite both linear; */
-  
+  @media (max-width: 640px) {
+    width:400px;
+  }
 `;
 
 const PTitle = styled.div`
@@ -98,13 +104,18 @@ const NTitle = styled.div`
   @media (max-width: 960px) {
     width: 130px;
   }
+  @media (max-width: 640px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 const Container = styled.div`
   @media (max-width: 960px) {
     max-width: 960px;
   }
   @media (max-width: 640px) {
-    max-width: 640px;
+    flex-direction: column;
+    height: 130px;
   }
   height: 62px;
   width: auto;
@@ -116,11 +127,18 @@ const Promotion = styled.div`
   width: 45%;
   justify-content: center;
   align-items: center;
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 const Notices = styled.div`
   display: flex;
   width: 55%;
-
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 50%;
+  }
   background-color: black;
   justify-content: center;
   align-items: center;
