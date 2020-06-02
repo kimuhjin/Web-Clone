@@ -50,11 +50,34 @@ to {
     transform:translateX(500px);
     opacity:1;
 }
+
 `;
+const TextMove3 = keyframes`
+from{
+    transform:translateY(2500px);
+    opacity:0;
+}
+to {
+    transform:translateY(0px);
+    opacity:1;
+}`;
+const TextMove4 = keyframes`
+from{
+    transform:translateY(-2500px);
+    opacity:0;
+}
+to {
+    transform:translateY(0px);
+    opacity:1;
+}`;
+
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 640px) {
+    justify-content: center;
+  }
 `;
 const TextContainer = styled.div`
   display: flex;
@@ -87,6 +110,9 @@ const DetailButton = styled.a`
     color: white;
     text-decoration: underline;
   }
+  @media (max-width: 640px) {
+    animation: ${TextMove3} 2s backwards;
+  }
 `;
 const Container = styled.div`
   display: flex;
@@ -101,9 +127,9 @@ const Container = styled.div`
     overflow: hidden;
   }
   @media (max-width: 640px) {
-    max-width: 640px;
-    margin-right: 0;
-    margin-left: 0;
+    flex-direction: column;
+
+    width: 100%;
   }
 `;
 
@@ -111,6 +137,11 @@ const BackGroundContainer = styled.div`
   height: 573px;
   width: auto;
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_coffee_bg.jpg");
+  @media (max-width: 640px) {
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
 `;
 
 const BeanImage = styled.div`
@@ -122,8 +153,16 @@ const BeanImage = styled.div`
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bean.png");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 100%;
 
   animation: ${BeanMove} 1s backwards;
+  @media (max-width: 640px) {
+    width: 160px;
+    height: 400px;
+    animation: none;
+    position: static;
+    animation: ${TextMove4} 2s backwards;
+  }
 `;
 const BeanText = styled.div`
   width: 400px;
@@ -131,4 +170,11 @@ const BeanText = styled.div`
   background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bean_tit.png");
   background-repeat: no-repeat;
   background-position: left;
+  @media (max-width: 640px) {
+    width: 400px;
+    height: 250px;
+    background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_bean_tit.png");
+    background-position: center;
+    animation: ${TextMove3} 2s backwards;
+  }
 `;

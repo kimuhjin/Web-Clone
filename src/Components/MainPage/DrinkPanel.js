@@ -218,7 +218,7 @@ const Image4CB = styled.div`
   height: 240px;
   }
   @media (max-width: 640px) {
-    top: 23%;
+    top: 25%;
     left: 4%;
     width: 340px;
   height: 310px;
