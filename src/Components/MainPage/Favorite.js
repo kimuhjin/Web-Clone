@@ -45,6 +45,24 @@ to {
 
 }
 `;
+const TextMove3 = keyframes`
+from {
+    transform:translateY(700px);
+}
+to {
+    transform:translateY(0px);
+
+}
+`;
+const TextMove4 = keyframes`
+from {
+    transform:translateY(-700px);
+}
+to {
+    transform:translateY(0px);
+
+}
+`;
 const ButtonOpacity = keyframes`
 from {
     opacity:0;
@@ -57,15 +75,22 @@ const TextAlignContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: solid 2px red;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 
 const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
-  /* border: 3px dashed yellow; */
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media (max-width: 640px) {
+    justify-content: center;
+  }
 `;
 
 const Container = styled.div`
@@ -74,6 +99,11 @@ const Container = styled.div`
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  border: 2px solid red;
+  @media (max-width: 640px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 `;
 const BackGroundContainer = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg");
@@ -85,6 +115,11 @@ const BackGroundContainer = styled.div`
   background-attachment: fixed;
   display: flex;
   overflow: hidden;
+  @media (max-width: 640px) {
+    height: 700px;
+    background-size: auto 100%;
+    background-attachment: scroll;
+  }
 `;
 const Text1 = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/fav_prod_txt01.png");
@@ -94,7 +129,10 @@ const Text1 = styled.div`
   position: relative;
   display: flex;
   background-position: right;
-  animation: ${TextMove1} 2.5s backwards;
+  /* animation: ${TextMove1} 2.5s backwards; */
+  @media (max-width: 640px) {
+    display:none;
+  }
 `;
 const Text2 = styled.div`
   background-image: url("https://www.starbucks.co.kr/common/img/main/fav_prod_txt02.png");
@@ -105,15 +143,28 @@ const Text2 = styled.div`
   display: flex;
   justify-content: flex-end;
   background-position: right;
-  animation: ${TextMove2} 2.5s backwards;
+  /* animation: ${TextMove2} 2.5s backwards; */
+  @media (max-width: 640px) {
+    width:400px;
+    height:230px;
+    position: static;
+    justify-content: center;
+    animation: ${TextMove3} 1.5s backwards;
+  }
 `;
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 500px;
   justify-content: flex-end;
-  /* border: 3px solid red; */
+  border: 3px solid red;
   width: 450px;
+  @media (max-width: 640px) {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
 `;
 
 const DetailButton = styled.a`
@@ -135,7 +186,12 @@ const DetailButton = styled.a`
     color: black;
     text-decoration: underline;
   }
-  animation: ${ButtonOpacity} 2s backwards;
+  /* animation: ${ButtonOpacity} 2s backwards; */
+  @media (max-width: 640px) {
+    position: static;
+    display:none;
+    
+  }
 `;
 const DetailButtonContainer = styled.div`
   display: flex;
@@ -149,4 +205,14 @@ const Image = styled.div`
   background-position: center;
   width: 700px;
   height: 500px;
+  @media (max-width: 640px) {
+    width: 400px;
+    height: 260px;
+    position: static;
+    border: 2px solid green;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    animation: ${TextMove4} 1.5s backwards;
+  }
 `;
