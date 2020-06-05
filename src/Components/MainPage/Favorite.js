@@ -128,9 +128,9 @@ const Text1 = styled.div`
   position: relative;
   display: flex;
   background-position: right;
-  /* animation: ${TextMove1} 2.5s backwards; */
+  animation: ${TextMove1} 2.5s backwards;
   @media (max-width: 640px) {
-    display:none;
+    display: none;
   }
 `;
 const Text2 = styled.div`
@@ -142,10 +142,10 @@ const Text2 = styled.div`
   display: flex;
   justify-content: flex-end;
   background-position: right;
-  /* animation: ${TextMove2} 2.5s backwards; */
+  animation: ${TextMove2} 2.5s backwards;
   @media (max-width: 640px) {
-    width:400px;
-    height:230px;
+    width: 400px;
+    height: 230px;
     position: static;
     justify-content: center;
     animation: ${TextMove3} 1.5s backwards;
@@ -185,11 +185,10 @@ const DetailButton = styled.a`
     color: black;
     text-decoration: underline;
   }
-  /* animation: ${ButtonOpacity} 2s backwards; */
+  animation: ${ButtonOpacity} 2s backwards;
   @media (max-width: 640px) {
     position: static;
-    display:none;
-    
+    display: none;
   }
 `;
 const DetailButtonContainer = styled.div`
