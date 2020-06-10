@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Web-Clone/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Web-Clone/static/js/main.5052e34e.chunk.js",
-    "main.js.map": "/Web-Clone/static/js/main.5052e34e.chunk.js.map",
+    "main.js": "/Web-Clone/static/js/main.a2f81e77.chunk.js",
+    "main.js.map": "/Web-Clone/static/js/main.a2f81e77.chunk.js.map",
     "runtime-main.js": "/Web-Clone/static/js/runtime-main.a1d90b24.js",
     "runtime-main.js.map": "/Web-Clone/static/js/runtime-main.a1d90b24.js.map",
     "static/js/2.a60a710d.chunk.js": "/Web-Clone/static/js/2.a60a710d.chunk.js",
     "static/js/2.a60a710d.chunk.js.map": "/Web-Clone/static/js/2.a60a710d.chunk.js.map",
     "index.html": "/Web-Clone/index.html",
-    "precache-manifest.ef171ddd65a9b082c36fd71def55b412.js": "/Web-Clone/precache-manifest.ef171ddd65a9b082c36fd71def55b412.js",
+    "precache-manifest.9d71781e5fea818fc7d41dbd134ed597.js": "/Web-Clone/precache-manifest.9d71781e5fea818fc7d41dbd134ed597.js",
     "service-worker.js": "/Web-Clone/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/Web-Clone/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.a60a710d.chunk.js.LICENSE.txt": "/Web-Clone/static/js/2.a60a710d.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a1d90b24.js",
     "static/js/2.a60a710d.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.5052e34e.chunk.js"
+    "static/js/main.a2f81e77.chunk.js"
   ]
 }
