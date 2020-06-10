@@ -76,14 +76,14 @@ function Header() {
                 onMouseLeave={LeaveMouseC}
                 On={CMenu}
               >
-                박재욱
+                COFFEE
               </Menu>
               <Menu
                 onMouseEnter={onMouseM}
                 onMouseLeave={LeaveMouseM}
                 On={MMenu}
               >
-                김예빈
+                MENU
               </Menu>
               <Menu
                 onMouseEnter={onMouseS}
